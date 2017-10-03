@@ -12,6 +12,9 @@ const Header = (propFromParent) => {
 
 
 const styling = {
+
+
+  lint: {},
   textStyles: {
   fontSize: 20
 },
