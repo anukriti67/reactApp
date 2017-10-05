@@ -1,3 +1,68 @@
 {
-  "extends" : "rallycoding"
+ "parser": "babel-eslint",
+ "plugins": [
+   "babel",
+   "react"
+ ],
+ "parserOptions": {
+   "sourceType": "module",
+   "allowImportExportEverywhere": true,
+   "codeFrame": false,
+   "plugins": [
+     "babel-plugin-syntax-decorators"
+   ],
+   "ecmaFeatures": {
+     "experimentalObjectRestSpread": true,
+     "jsx": true
+   }
+ },
+ "rules": {
+   "no-useless-escape": 0,
+   "indent": ["error", 2],
+   "no-unused-vars": 2,
+   "no-undef": "off",
+   "no-unreachable": "error",
+   "complexity": ["error", 5],
+   "dot-notation": 2,
+   "dot-location": [ 2, "property" ],
+   "eqeqeq": 2,
+   "max-depth": ["error", 2],
+   "max-params": ["error", 4],
+   "max-statements": ["error", 13],
+   "no-implicit-coercion": 0,
+   "no-implied-eval": 2,
+   "no-invalid-this": 2,
+   "no-labels": 2,
+   "no-loop-func": 2,
+   "no-new-func": 2,
+   "no-new-wrappers": 2,
+   "no-new": 2,
+   "no-octal-escape": 2,
+   "no-octal": 2,
+   "no-param-reassign": 0,
+   "no-process-env": 1,
+   "no-unused-expressions": 2,
+   "no-useless-concat": 2,
+   "no-void": 2,
+   "no-with": 2,
+   "wrap-iife": [ 2, "inside" ],
+   "no-console": ["error", { "allow": ["warn", "error"] }],
+   "yoda": [ 2, "never", { "exceptRange": true } ],
+   "curly":  "error",
+   "constructor-super": "off",
+   "react/jsx-uses-react": "error",
+   "react/jsx-uses-vars": "error",
+ },
+ "env": {
+   "browser": true,
+   "node": true,
+   "es6": true
+ },
+ "globals": {
+   "CKEDITOR": true,
+   "CUI": true
+ },
+ "extends": [
+   "eslint:recommended", "plugin:react/recommended"
+ ]
 }
